@@ -21,5 +21,17 @@ public class Library {
             return "Book not found";
         }
     }
+    private List<String> issuedBooks = new ArrayList<>();
+
+    public String issueBook(String book) {
+        if (books.contains(book) && !issuedBooks.contains(book)) {
+            issuedBooks.add(book);
+            books.remove(book);
+            return "Book issued: " + book;
+        } else {
+            return "Book not available for issuance.";
+        }
+    }
+
 
 }
