@@ -41,7 +41,8 @@ public class Library {
             return "Book was not issued.";
         }
     }
-
-
-
+    public void viewCatalog() {
+        System.out.println("Available books: " + books);
+        System.out.println("Issued books: " + issuedBooks);
+    }
 }
