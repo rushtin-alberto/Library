@@ -32,6 +32,16 @@ public class Library {
             return "Book not available for issuance.";
         }
     }
+    public String returnBook(String book) {
+        if (issuedBooks.contains(book)) {
+            issuedBooks.remove(book);
+            books.add(book);
+            return "Book returned: " + book;
+        } else {
+            return "Book was not issued.";
+        }
+    }
+
 
 
 }

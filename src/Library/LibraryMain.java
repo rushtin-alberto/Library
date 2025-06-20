@@ -6,7 +6,7 @@ public class LibraryMain {
         library.addBook("The Great Gatsby");
         System.out.println(library.issueBook("The Great Gatsby"));
         System.out.println(library.issueBook("1984"));
-
+        System.out.println(library.returnBook("The Great Gatsby"));
     }
 }
 
